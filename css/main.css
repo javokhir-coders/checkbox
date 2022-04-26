@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.heading{
+  margin-top: 100px;
+  text-align: center;
+}
+
+form{
+  width: 200px;
+  margin: 50px auto;
+}
+.label{
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+
+}
+
+.input-controller{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.input:checked ~ .tennis {
+ background-image: url("../img/table-tennis.png");
+ background-repeat: no-repeat;
+ background-size: 80%;
+ background-position: center;
+}
+
+.input:checked ~ .backetball {
+  background-image: url("../img/basketball-ball.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+ }
+
+ .input:checked ~ .voleyball {
+  background-image: url("../img/baby.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+ }
+
+ .input:checked ~ .xokkey {
+  background-image: url("../img/hockey-equipment.png");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+ }
+ .input:disabled ~ .input-controller{
+   opacity: 0.4;
+ }
+
+ .input:focus ~ .input-controller{
+  box-shadow: 0px 0px 10px 0px;
+}
